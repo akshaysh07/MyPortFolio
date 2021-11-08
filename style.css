@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "lato", sans-serif;
+  background-color: #eee1b3;
+  margin: 0;
+}
+footer {
+  background-color: #a64253;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  background-color: #a64253;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 100;
+}
+nav a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+header {
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-right: 80vh;
+}
+header p {
+  font-size: 30px;
+  margin: 0;
+  margin-right: 80vh;
+}
+section {
+  text-align: center;
+  padding: 30px;
+}
+
+#social {
+  background-color: #a64253;
+  color: white;
+}
+.social-ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.social-ul a {
+  color: white;
+  margin: 10px;
+  font-size: 30px;
+}
+section p {
+  margin-top: 0;
+}
+section h2 {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+#code {
+  text-align: center;
+  font-size: 30px;
+}
+
+.fa-heart {
+  color: red;
+}
+.projects {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects-container {
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects-name {
+  color: black;
+  font-family: "lato", sans-serif;
+  font-size: 25px;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.Skill-Container {
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  font-size: 30px;
+}
+
+#certificates {
+  display: flex;
+  flex-direction: column;
+}
+
+#certificates li {
+  margin: 20px;
+  list-style-type: none;
+}
+#certificates li a {
+  color: rgba(0, 0, 0, 0.849);
+}
+
+#certificates li a:hover {
+  color: blue;
+}
